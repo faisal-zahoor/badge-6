@@ -1,0 +1,79 @@
+body {
+    background: url(./assets/bg.jpg);
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: max-content;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 15px #fff;
+}
+
+.group {
+    margin: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+input {
+    display: block;
+    padding: 10px;
+    border: none;
+    border-bottom: 3px solid rgb(83, 26, 26);
+    border-left: 3px dotted rgb(83, 26, 26);
+    width: 91%;
+    min-width: 300px;
+    background-color: transparent;
+    color: rgb(255, 247, 247);
+    outline: none;
+    font-size: large;
+}
+
+.output {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: max-content;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 15px #fff;
+    width: 330px;
+    height: 471px;
+    margin-left: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+}
+
+#result {
+    animation: beat .25s infinite alternate;
+}
+
+@keyframes beat{
+	to { transform: scale(1.4); }
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 10px;
+    width: 94%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+}

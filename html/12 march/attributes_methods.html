@@ -1,0 +1,55 @@
+<!-- 
+    Topic: Html Tags attributes & methods
+    Date: 12 March 2024
+    Author: faisal@nextash.com
+
+    Requirements:
+        Get 5 numbers from users and show there sum and the numbers itself
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML attributes & methods</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form">
+        <div class="group">
+          <label for="">Please Give Input 1</label>
+          <input type="number" id="input_1" oninput="sum()" />
+        </div>
+
+        <div class="group">
+          <label for="">Please Give Input 2</label>
+          <input type="number" id="input_2" oninput="sum()" />
+        </div>
+
+        <div class="group">
+          <label for="">Please Give Input 3</label>
+          <input type="number" id="input_3" oninput="sum()" />
+        </div>
+
+        <div class="group">
+          <label for="">Please Give Input 4</label>
+          <input type="number" id="input_4" oninput="sum()" />
+        </div>
+
+        <div class="group">
+          <label for="">Please Give Input 5</label>
+          <input type="number" id="input_5" oninput="sum()" />
+        </div>
+
+        <!-- <button onclick="sum()">SUM</button> -->
+      </div>
+
+      <div class="output"><span id="result">Sum: </span></div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
