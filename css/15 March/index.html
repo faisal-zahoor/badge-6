@@ -1,0 +1,84 @@
+<!-- 
+    Topic: CSS Selectors & Combinators
+    Date: 15 March 2024
+    Author: faisal@nextash.com
+
+    Requirements:
+        showcase css selectors and combinators
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selector & Combinators</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <h1>Select By Tag</h1>
+    
+    <div class="show_more">
+          <button>Show More</button>
+      <br />
+      <p>
+        we should just give the name of tag and apply the
+        <br />
+        for example:
+
+        <button>2nd Button</button>
+      </p>
+
+      <pre>
+            h1 {
+                font-family: "xyx";
+                color: navy
+            }
+        </pre
+      >
+    </div>
+
+    <p>Hello</p>
+    <button class="green">Select By Class</button>
+    <span class="green">Select By Class</span>
+
+    <div class="show_more">
+      <button>Show More</button>
+      <br />
+      <p class="green">
+        we should give the name of class with preceding dot(.) and apply this
+        <br />
+        for example:
+      </p>
+
+      <pre class="green">
+        .green {
+            background-color: green;
+            font-size: 30px;
+            padding: 10px 20px;
+        }
+    </pre
+      >
+    </div>
+    <button id="black-btn">Select By ID</button>
+
+    <div class="show_more">
+      <button>Show More</button>
+      <br />
+      <p id="black-btn">
+        we should give the id of element with preceding dot(#) and apply this
+        <br />
+        for example:
+      </p>
+
+      <pre id="black-btn">
+            #black-btn {
+                background-color: black;
+                color: #fff;
+            }
+        </pre
+      >
+    </div>
+  </body>
+</html>

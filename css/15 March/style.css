@@ -1,0 +1,60 @@
+.show_more {
+  max-height: 20px;
+  overflow: hidden;
+  transition: all 0.7s ease-out;
+  margin: 20px;
+  padding: 20px;
+}
+
+.show_more:focus-within {
+  max-height: 100vh;
+  transition: all 0.7s ease-in;
+}
+
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: navy;
+}
+
+.green {
+  background-color: green;
+  font-size: 30px;
+  padding: 10px 20px;
+}
+
+button.green {
+  cursor: pointer;
+}
+
+#black-btn {
+  background-color: black;
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 20px;
+}
+
+
+/* combinators */
+
+.show_more > button {
+    animation: heart-beat 1s infinite;
+    background-color: purple;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+@keyframes heart-beat {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1.5)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
