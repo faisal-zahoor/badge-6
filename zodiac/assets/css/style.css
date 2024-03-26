@@ -1,0 +1,108 @@
+.container {
+  max-width: 1400px;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+.container + h1 {
+  color: rgba(13, 77, 7, 0.8);
+  margin-bottom: 20px;
+}
+.container .zodiac-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container .zodiac-container .zodiac-sign {
+  width: 16%;
+  margin-bottom: 40px;
+}
+.container .zodiac-container .zodiac-sign .card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(13, 77, 7, 0.8);
+          box-shadow: 0 0 10px rgba(13, 77, 7, 0.8);
+}
+.container .zodiac-container .zodiac-sign .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.container .zodiac-container .zodiac-sign .card img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.container .zodiac-container .zodiac-sign .card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 77, 7, 0.8);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px;
+  color: #fff;
+}
+.container .zodiac-container .zodiac-sign .card .overlay:hover {
+  opacity: 1;
+}
+.container #result {
+  font-size: 18px;
+  margin-top: 20px;
+  background: rgba(13, 77, 7, 0.8);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  border-radius: 19px;
+  height: 200px;
+  font-size: 35px;
+  padding: 20px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.container #result.show {
+  top: 38%;
+  left: 50%;
+  width: 71%;
+}
+/*# sourceMappingURL=style.css.map */
